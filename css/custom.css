@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+@import url(https://fonts.googleapis.com/css?family=Iceland);
+
+body, html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#days {
+  font-size: 200px;
+  color: #db4844;
+}
+
+#hours {
+  font-size: 150px;
+  color: #f07c22;
+}
+
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+
+.timer {
+  display: inline-block;
+  line-height: 1;
+  padding: 15px;
+  font-size: 40px;
+  margin-top: -10px;
+}
+
+.time {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+.top {
+  display: block;
+  text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
+  color: white;
+  /*padding-top: 5px;*/
+  border: 1px white solid;
+  border-radius: 7px;
+  -moz-box-shadow: inset 0 0 10px #fff;
+  -webkit-box-shadow: inset 0 0 10px #fff;
+  box-shadow: inset 0 0 10px #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+  background-color: white;
+}
+
+.menu-icons {
+  width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: -5px
+}
+
+@media screen and (max-width: 600px) {
+
+  /*  .top {
+    left:0%;
+  }*/
+  .glow {
+    font-size: 70em;
+  }
+}
+
+.row-custom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column-custom {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.glow {
+  display: inline-block;
+  text-align: center;
+  font-size: 7em;
+  color: #fff;
+  text-align: center;
+  font-family: Iceland;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 60px #228DFF, 0 0 70px #228DFF;
+  /*-webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;*/
+}
+/* Events Card start */
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-color: white;
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+    padding: 10px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+}
+.card-custom {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 70%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card-custom:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  color:black;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+   text-align: center;
+}
+
+.card-custom:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.2;
+}
+
+.card-custom:hover .card__info {
+    background-color: transparent;
+    position: relative;
+    opacity: 0.8;
+}
+
+.card-custom:hover .card__info-hover {
+    opacity: 1;
+}
+/* Events cards ends */
+
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+/* box-shadow: inset 0 0 5px grey; */
+border:1px solid white;
+border-radius: 10px;
+background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: white;
+/* background-image: linear-gradient(black,white,grey); */
+border-radius: 10px;
+}
